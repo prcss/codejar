@@ -291,7 +291,7 @@ export function CodeJar(editor: HTMLElement, highlight: (e: HTMLElement, pos?: P
       preventDefault(event)
       event.stopPropagation()
       if (afterCursor() == '') {
-        insert('\n ')
+        insert('\n')
         const pos = save()
         pos.start = --pos.end
         restore(pos)
